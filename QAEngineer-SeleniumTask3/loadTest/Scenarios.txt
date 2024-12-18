@@ -1,0 +1,76 @@
+Basic Search Functionality
+
+    Scenario: Verify that the search bar is functional and returns relevant results for a valid product name.
+    Steps:
+        Navigate to the homepage.
+        Enter a valid product name in the search bar.
+        Click the search button.
+        Verify that the search results are displayed and relevant.
+
+
+Search with Multiple Keywords
+
+    Scenario: Verify that the search functionality handles multiple keywords correctly.
+    Steps:
+        Navigate to the homepage.
+        Enter multiple keywords in the search bar.
+        Click the search button.
+        Verify that the search results are relevant to all keywords.
+
+
+Search with Default Placeholder
+
+    Scenario: Verify that the search functionality handles the search with default placeholder.
+    Steps:
+        Navigate to the homepage.
+        Click search button directly while there is a placeholder text
+        Verify that the search results are relevant to placeholder text
+
+
+Search with Special Characters
+
+    Scenario: Verify that the search functionality handles special characters without errors.
+    Steps:
+        Navigate to the homepage.
+        Enter a query with special characters (e.g., @, #, $).
+        Click the search button.
+        Verify that the search results are displayed correctly.
+
+
+Search Performance Under Load
+
+    Scenario: Assess the performance of the search functionality under load.
+    Steps:
+        Simulate multiple users performing searches simultaneously.
+        Measure the response time and system performance.
+
+
+Last Visited Products Display on Search 
+
+    Scenario: Last visited products should be displayed correctly on search textbox click
+    Steps:
+        Clear cache 
+        Visit multiple products 
+        Return to homepage
+        Click search textbox
+        Verify that last visited products are visible in right order
+
+Last Searches Display on Search 
+
+    Scenario: Last searches should be displayed correctly on search textbox click
+    Steps:
+        Clear cache 
+        Search for multiple products 
+        Return to homepage
+        Click search textbox
+        Verify that searched products are visible in right order
+
+
+Popular Products Display on Search 
+
+    Scenario: Popular products should be displayed correctly on search textbox click
+    Steps:
+        Clear cache 
+        Return to homepage
+        Click search textbox
+        Verify that popular products are visible in right order
