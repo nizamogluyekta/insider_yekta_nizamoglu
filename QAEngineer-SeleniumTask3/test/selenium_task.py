@@ -1,5 +1,10 @@
-
-from mylib import *
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+from utils import *
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src/pages'))
+from mainpage import *
+from insidercareer import *
 
 # Configure logging
 logging.basicConfig(filename='test_log.log', level=logging.INFO,

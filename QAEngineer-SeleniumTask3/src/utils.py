@@ -12,6 +12,7 @@ import unittest
 import logging
 from time import sleep
 
+
 class SeleniumLibrary:
     def __init__(self, browser='chrome'):
         if browser == 'chrome':
@@ -45,12 +46,6 @@ class SeleniumLibrary:
         element = self.driver.find_element(By.XPATH, f"//*[contains(text(), '{text}')]")
         text = element.get_attribute('textContent')
         return len(text) > 0
-    
-    def select_location_and_department(self, location_xpath, department_xpath, location_text, department_text):
-        self.find_element(By.XPATH, location_xpath).click()
-        self.driver.find_element(By.XPATH, f"//*[contains(text(), '{location_text}')]").click()
-        self.find_element(By.XPATH, department_xpath).click()
-        self.driver.find_element(By.XPATH, f"//*[contains(text(), '{department_text}')]").click()
 
     def check_text_for_xpath(self, xpath, text):
         element = self.driver.find_element(By.XPATH, xpath)
